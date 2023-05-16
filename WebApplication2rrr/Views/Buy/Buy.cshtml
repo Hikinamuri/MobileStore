@@ -1,0 +1,34 @@
+﻿@model WebApplication2rrr.Models.Phone
+@{
+    ViewData["Title"] = "Телефон";
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Магазин смартфонов</title>
+</head>
+<body>
+    <h3>Оформление заказа</h3>
+    <p>Смартфон @Model.Name</p>
+    <p>Цена @Model.Price</p>
+
+    <form method="post">
+        <input type="hidden" value="@ViewBag.PhoneId" name="PhoneID" />
+        <label> Имя: </label>
+        <input type="text" name="name" /> <br />
+
+        <label> Телефон: </label>
+        <input type="text" name="phone" />  <br />
+
+        <label>Адрес:" </label>
+        <input type="text" name="adress" /> <br />
+
+        <input type="submit" name="btn" />
+        @*  <a href="~/Buy/Buy/@Order Купить</a>
+        *@
+    </form>
+
+</body>
+</html>

@@ -1,0 +1,17 @@
+﻿@model WebApplication2rrr.Models.User
+
+@{
+    ViewBag.Title = "User Profile";
+}
+
+<h1>User Profile</h1>
+
+<!-- Добавьте элементы интерфейса и кнопки для перехода на главную страницу и оформления заказа -->
+<a href="/">Go to Home</a>
+<a href="/Home/Index/@Model.UserId">Create Order</a>
+
+<p>Username: @Model.UserName</p>
+<p>Email: @Model.Name</p>
+<p>Sex: @Model.Sex</p>
+<p>Role: @Model.Role</p>
+<p>Number Telephone: @Model.NumberTelephone</p>
